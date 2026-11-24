@@ -1,0 +1,29 @@
+[project]
+name = "envirotrack"
+version = "0.1.0"
+description = "A reliable environmental data platform for automated weather ingestion, validation, processing, and analytics."
+readme = "README.md"
+authors = [
+    { name = "Mugheer Islam Khattak" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.1.1",
+    "plotly>=7.1.0",
+    "psycopg[binary]>=3.3.9",
+    "requests>=2.34.2",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+envirotrack = "envirotrack:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]

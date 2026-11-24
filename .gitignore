@@ -1,0 +1,39 @@
+@'
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Python tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local data and logs
+data/
+logs/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+'@ | Set-Content .gitignore
