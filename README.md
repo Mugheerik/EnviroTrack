@@ -1,7 +1,5 @@
 # EnviroTrack — Reliable Environmental Data Platform
 
-# EnviroTrack — Reliable Environmental Data Platform
-
 **Live Dashboard:** [View EnviroTrack](https://envirotrack-abbottabad.streamlit.app/)
 
 **GitHub Repository:** https://github.com/Mugheerik/EnviroTrack
