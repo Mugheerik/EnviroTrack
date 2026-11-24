@@ -8,7 +8,10 @@ import streamlit as st
 
 from envirotrack.db import DATABASE_URL
 
-DB_URL = os.getenv("DATABASE_URL", DATABASE_URL)
+try:
+    DB_URL = st.secrets["DATABASE_URL"]
+except (KeyError, FileNotFoundError):
+    DB_URL = os.getenv("DATABASE_URL", DATABASE_URL)
 LOCATION = "abbottabad"
 TIMEZONE = ZoneInfo("Asia/Karachi")
 
