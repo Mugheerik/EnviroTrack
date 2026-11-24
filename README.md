@@ -1,5 +1,11 @@
 # EnviroTrack — Reliable Environmental Data Platform
 
+# EnviroTrack — Reliable Environmental Data Platform
+
+**Live Dashboard:** [View EnviroTrack](https://envirotrack-abbottabad.streamlit.app/)
+
+**GitHub Repository:** https://github.com/Mugheerik/EnviroTrack
+
 EnviroTrack is a data engineering project that automatically collects, stores, validates, processes, and visualizes weather forecast data for Abbottabad, Pakistan.
 
 The project focuses on building a reliable data pipeline with particular attention to data quality, idempotent processing, raw data preservation, pipeline monitoring, and database integrity.
@@ -9,6 +15,10 @@ The project focuses on building a reliable data pipeline with particular attenti
 EnviroTrack uses the Open-Meteo API as its weather data source.
 
 The pipeline retrieves weather forecasts, preserves the original API responses, transforms hourly measurements into structured PostgreSQL records, and makes the resulting data available through an interactive Streamlit dashboard.
+
+## Dashboard Preview
+
+![EnviroTrack Dashboard](dashboard.png)
 
 ### Architecture
 
